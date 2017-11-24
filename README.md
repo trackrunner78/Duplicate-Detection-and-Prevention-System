@@ -1,0 +1,2 @@
+# Duplicate-Detection-and-Prevention-System
+This is a duplicate file searching program coded in python 3.6.2 designed to find duplicate files to help clean the system from clutter. It uses md5 hashing, as well as difference hashing to compute identical or similar files. This program also allows you to whitelist files/folders as well as use a real-time scan for notifications of a new-comming duplicate file. This is a project for LSU 3380.

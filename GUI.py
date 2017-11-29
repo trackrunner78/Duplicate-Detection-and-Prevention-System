@@ -32,7 +32,11 @@ class GUI(Frame):
         dupLabel = Label(self, text="Duplicates:", font=("Sans", 40))
         dupLabel.place(x=100, y=250)
 
-        load = Image.open
+        load = Image.open('DDPS_logo128.png')
+        render = ImageTk.PhotoImage(load)
+        img = Label(self, image=render)
+        img.image = render
+        img.place(x=0, y=0)
 
 
 

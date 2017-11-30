@@ -1,5 +1,6 @@
 from tkinter  import *
 from PIL import Image, ImageTk
+import tkinter.ttk as ttk
 
 
 class GUI(Frame):
@@ -26,7 +27,8 @@ class GUI(Frame):
         setButton = Button(self, text="Settings", height=3, width=10)
         setButton.place(x=0, y=450)
 
-        scanButton = Button(self, text="Scan", bg="Blue", fg="white", height=4, width=20)
+        scanButton = Button(self, text="Scan", font=("Sans"), bg="Blue",
+                                                     fg="white", height=4, width=20)
         scanButton.place(x=500, y=350)
 
         dupLabel = Label(self, text="Duplicates:", font=("Sans", 40))
@@ -37,6 +39,9 @@ class GUI(Frame):
         img = Label(self, image=render)
         img.image = render
         img.place(x=0, y=0)
+
+        progressBar = ttk.Progressbar(self, length=600, orient='horizontal', mode='determinate')
+        progressBar.place(x=150, y=150)
 
 
 
